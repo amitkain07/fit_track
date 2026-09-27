@@ -1,9 +1,9 @@
 {
-  "name": "@frontend/pm_client",
+  "name": "@frontend/pm_admin",
   "version": "0.0.1",
   "private": true,
   "nx": {
-    "sourceRoot": "apps/pm_client/src"
+    "sourceRoot": "apps/pm_admin/src"
   },
   "dependencies": {
     "next": "~16.1.6",

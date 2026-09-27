@@ -1,8 +1,11 @@
 {
-  "name": "@temp-workspace/source",
+  "name": "@frontend/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "dev:pm_client": "nx dev @frontend/pm_client --port 3000",
+    "dev:pm_admin": "nx dev @frontend/pm_admin --port 3001"
+  },
   "private": true,
   "dependencies": {
     "next": "~16.1.6",
@@ -25,12 +28,14 @@
     "@swc/cli": "~0.8.1",
     "@swc/core": "~1.15.5",
     "@swc/helpers": "~0.5.18",
+    "@tailwindcss/postcss": "^4.3.3",
     "@testing-library/dom": "10.4.0",
     "@testing-library/react": "16.3.0",
     "@types/jest": "~30.0.0",
     "@types/node": "^22.0.0",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
+    "autoprefixer": "^10.5.4",
     "eslint": "^9.8.0",
     "eslint-config-next": "^16.1.6",
     "eslint-config-prettier": "^10.0.0",
@@ -43,7 +48,9 @@
     "jest-environment-jsdom": "~30.3.0",
     "jest-util": "~30.3.0",
     "nx": "23.2.0",
+    "postcss": "^8.5.26",
     "prettier": "~3.6.2",
+    "tailwindcss": "^4.3.3",
     "ts-jest": "^29.4.7",
     "ts-node": "10.9.1",
     "tslib": "^2.3.0",
