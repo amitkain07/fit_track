@@ -9,7 +9,12 @@
     "lint": "next lint"
   },
   "nx": {
-    "sourceRoot": "apps/pm_admin/src"
+    "sourceRoot": "apps/pm_admin/src",
+    "targets": {
+      "build": {
+        "outputs": ["{projectRoot}/.next"]
+      }
+    }
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.3.3",

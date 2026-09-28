@@ -61,6 +61,10 @@
     }
   ],
   "targetDefaults": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": ["{projectRoot}/.next"]
+    },
     "test": {
       "dependsOn": ["^build"]
     }
