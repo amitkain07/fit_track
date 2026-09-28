@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
+    "build": "nx run-many -t build",
+    "build:pm_client": "nx build @frontend/pm_client",
+    "build:pm_admin": "nx build @frontend/pm_admin",
     "dev:pm_client": "nx dev @frontend/pm_client --port 3000",
     "dev:pm_admin": "nx dev @frontend/pm_admin --port 3001"
   },
